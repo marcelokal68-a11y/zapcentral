@@ -1,0 +1,4 @@
+- [Orval + Zod v3 integers](orval-zod-integers.md) — `zod.int()` breaks on Zod v3; use `type: number` in response schemas, `type: integer` only in path/query params.
+- [Orval params name collision](orval-params-collision.md) — ops with both path + query params collide between api.ts and types/; fix by removing query params from ops that have path params.
+- [Tailwind v4 CSS setup](tailwind-v4-css.md) — use `@import "tailwindcss"` not `@tailwind` directives; map tokens via `@theme inline {}`; avoid `@apply border-border`.
+- [Clerk frontend setup](clerk-frontend-setup.md) — `@clerk/shared` must be in the frontend package; always use `publishableKeyFromHost(hostname, VITE_CLERK_PUBLISHABLE_KEY)`, never raw env var.
